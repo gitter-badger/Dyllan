@@ -1,0 +1,5 @@
+E:\SourceCode\GitHub\Post\Dyllan.Common\Dyllan.Common\bin\Debug\Dyllan.Common.dll
+E:\SourceCode\GitHub\Post\Dyllan.Common\Dyllan.Common\bin\Debug\Dyllan.Common.pdb
+E:\SourceCode\GitHub\Post\Dyllan.Common\Dyllan.Common\obj\Debug\Dyllan.Common.dll
+E:\SourceCode\GitHub\Post\Dyllan.Common\Dyllan.Common\obj\Debug\Dyllan.Common.pdb
+E:\SourceCode\GitHub\Post\Dyllan.Common\Dyllan.Common\obj\Debug\Dyllan.Common.csprojResolveAssemblyReference.cache
