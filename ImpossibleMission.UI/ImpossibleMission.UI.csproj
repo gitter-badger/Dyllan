@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A6ADD90-2C7D-4799-8E38-13F0AFB5FB2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImpossibleMission</RootNamespace>
+    <AssemblyName>ImpossibleMission</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\The_Impossible_Game_32px_537480_easyicon.net.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v15.1.Core, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v15.1.Core, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v15.1.Core, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v15.1.Drawing, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v15.1.Core, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.1.UI, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v15.1.Core, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v15.1.Win, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\Assemblies\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="SandDock, Version=3.0.6.1, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\Divelements Limited\SandDock for Windows Forms\SandDock.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\Book\GetBooksTransaction.cs" />
+    <Compile Include="Controller\File\ActivePlanTransaction.cs" />
+    <Compile Include="Controller\File\AddSchedulePlanTransaction.cs" />
+    <Compile Include="Controller\File\ComEbbOperatorTransaction.cs" />
+    <Compile Include="Controller\File\CompletePlanOperatorTransaction.cs" />
+    <Compile Include="Controller\File\Ebbinghaus\AddEbbinghousTransaction.cs" />
+    <Compile Include="Controller\File\NameFormatter\NameFormatterTransaction.cs" />
+    <Compile Include="Controller\File\PlanTransaction.cs" />
+    <Compile Include="Controller\File\SchedulePlanOperatorTransaction.cs" />
+    <Compile Include="Controller\Plan\PlanFactory.cs" />
+    <Compile Include="Controller\ManagerFactory.cs" />
+    <Compile Include="Dialog\GetITBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\GetITBook.Designer.cs">
+      <DependentUpon>GetITBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Prompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\Prompt.Designer.cs">
+      <DependentUpon>Prompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\Constant.cs" />
+    <Compile Include="Global\Extension.cs" />
+    <Compile Include="Global\UserSetting.cs" />
+    <Compile Include="ImpossibleMissionMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpossibleMissionMainForm.Designer.cs">
+      <DependentUpon>ImpossibleMissionMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IStatus.cs" />
+    <Compile Include="Controller\Transaction.cs" />
+    <Compile Include="Interface\ITransaction.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UIResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UIResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Widget\Common\UCTimer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widget\Common\UCTimer.Designer.cs">
+      <DependentUpon>UCTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Widget\File\ActivePlanManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widget\File\ActivePlanManager.Designer.cs">
+      <DependentUpon>ActivePlanManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Widget\File\Operator\ActivePlanOperatorContext.cs" />
+    <Compile Include="Widget\File\AddSchedulePlan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widget\File\AddSchedulePlan.Designer.cs">
+      <DependentUpon>AddSchedulePlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Widget\File\Ebbinghaus\AddEbbinghous.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widget\File\Ebbinghaus\AddEbbinghous.Designer.cs">
+      <DependentUpon>AddEbbinghous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Widget\File\Ebbinghaus\EbbinghausForgettingCurve.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widget\File\Ebbinghaus\EbbinghausForgettingCurve.Designer.cs">
+      <DependentUpon>EbbinghausForgettingCurve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Widget\File\NameFormatter\CommonNameFormatter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widget\File\NameFormatter\CommonNameFormatter.Designer.cs">
+      <DependentUpon>CommonNameFormatter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Widget\File\PlanManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widget\File\PlanManager.Designer.cs">
+      <DependentUpon>PlanManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Widget\File\Operator\UCComEbbOperator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widget\File\Operator\UCComEbbOperator.Designer.cs">
+      <DependentUpon>UCComEbbOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Widget\File\Operator\UCDailyItemOperator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widget\File\Operator\UCDailyItemOperator.Designer.cs">
+      <DependentUpon>UCDailyItemOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Widget\File\Operator\UCScedulePlanOperator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widget\File\Operator\UCScedulePlanOperator.Designer.cs">
+      <DependentUpon>UCScedulePlanOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Widget\File\Operator\UCCompleteOperator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widget\File\Operator\UCCompleteOperator.Designer.cs">
+      <DependentUpon>UCCompleteOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Widget\UCTabbedDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Dialog\GetITBook.resx">
+      <DependentUpon>GetITBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Prompt.resx">
+      <DependentUpon>Prompt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpossibleMissionMainForm.resx">
+      <DependentUpon>ImpossibleMissionMainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UIResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widget\Common\UCTimer.resx">
+      <DependentUpon>UCTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widget\File\ActivePlanManager.resx">
+      <DependentUpon>ActivePlanManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widget\File\AddSchedulePlan.resx">
+      <DependentUpon>AddSchedulePlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widget\File\Ebbinghaus\AddEbbinghous.resx">
+      <DependentUpon>AddEbbinghous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widget\File\Ebbinghaus\EbbinghausForgettingCurve.resx">
+      <DependentUpon>EbbinghausForgettingCurve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widget\File\NameFormatter\CommonNameFormatter.resx">
+      <DependentUpon>CommonNameFormatter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widget\File\PlanManager.resx">
+      <DependentUpon>PlanManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widget\File\Operator\UCComEbbOperator.resx">
+      <DependentUpon>UCComEbbOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widget\File\Operator\UCDailyItemOperator.resx">
+      <DependentUpon>UCDailyItemOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widget\File\Operator\UCScedulePlanOperator.resx">
+      <DependentUpon>UCScedulePlanOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widget\File\Operator\UCCompleteOperator.resx">
+      <DependentUpon>UCCompleteOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dyllan.Common\Dyllan.Common.csproj">
+      <Project>{33738dd8-32f1-4cf5-9491-3c3ab35bd426}</Project>
+      <Name>Dyllan.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImpossibleMission.Model\ImpossibleMission.Model.csproj">
+      <Project>{b94bd119-37ad-4a94-a1b1-ceb8c74151d2}</Project>
+      <Name>ImpossibleMission.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImpossibleMission.Contract\ImpossibleMission.Contract.csproj">
+      <Project>{bac5d41a-8c5a-463a-9cbc-b035ec93c08b}</Project>
+      <Name>ImpossibleMission.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImpossibleMission.Dal.Sql\ImpossibleMission.Dal.Sql.csproj">
+      <Project>{31d1600f-bc7a-471b-9607-869f910f4bf9}</Project>
+      <Name>ImpossibleMission.Dal.Sql</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error_32px_1134460_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error_32px_1134460_easyicon.net1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error_32px_1134460_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error_24px_1134460_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error_16px_1134460_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_warning_15.223300970874px_1185695_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information_16px_1128290_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear_16px_1186688_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_file_32px_1187338_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Impossible_Game_32px_537480_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star00.png" />
+    <None Include="Resources\Star11.png" />
+    <None Include="Resources\Star22.png" />
+    <None Include="Resources\Star33.png" />
+    <None Include="Resources\Star44.png" />
+    <None Include="Resources\Star55.png" />
+    <Content Include="The_Impossible_Game_32px_537480_easyicon.net.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
