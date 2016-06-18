@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCommonLibrary", "..\..\GitHub\Post\Dyllan.Common\TestCommonLibrary\TestCommonLibrary.csproj", "{5025B31A-0979-4BEC-BA92-48AACAD87396}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestCommonLibrary", "..\..\GitHub\Post\Dyllan.Common\UnitTestCommonLibrary\UnitTestCommonLibrary.csproj", "{EC8EE9D9-A6EF-413F-A616-99B4C6DC63E0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImpossibleMission.UI", "ImpossibleMission.UI\ImpossibleMission.UI.csproj", "{3A6ADD90-2C7D-4799-8E38-13F0AFB5FB2F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImpossibleMission.UT", "ImpossibleMission.UT\ImpossibleMission.UT.csproj", "{B5E93C95-E3E6-4583-80A3-332A83E74764}"
@@ -29,23 +25,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Douban.Terminal", "Douban.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dyllan.Common", "Dyllan.Common\Dyllan.Common.csproj", "{33738DD8-32F1-4CF5-9491-3C3AB35BD426}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdPart", "ThirdPart", "{D4A5A482-C493-41E2-8965-A338F7F5FD39}"
-	ProjectSection(SolutionItems) = preProject
-		Assemblies\HtmlAgilityPack.dll = Assemblies\HtmlAgilityPack.dll
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5025B31A-0979-4BEC-BA92-48AACAD87396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5025B31A-0979-4BEC-BA92-48AACAD87396}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5025B31A-0979-4BEC-BA92-48AACAD87396}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC8EE9D9-A6EF-413F-A616-99B4C6DC63E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC8EE9D9-A6EF-413F-A616-99B4C6DC63E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC8EE9D9-A6EF-413F-A616-99B4C6DC63E0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3A6ADD90-2C7D-4799-8E38-13F0AFB5FB2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3A6ADD90-2C7D-4799-8E38-13F0AFB5FB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A6ADD90-2C7D-4799-8E38-13F0AFB5FB2F}.Release|Any CPU.ActiveCfg = Release|Any CPU

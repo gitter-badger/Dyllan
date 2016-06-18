@@ -72,6 +72,12 @@
       <Name>Dyllan.Common</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="SQLScript\Step1_ClearDB.sql" />
+    <Content Include="SQLScript\Step2_CreateDB.sql" />
+    <Content Include="SQLScript\AllScript.sql" />
+    <Content Include="SQLScript\Step3_CreateObjects.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
